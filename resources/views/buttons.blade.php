@@ -18,5 +18,9 @@
         </button>
     </div>
 
-    <button class="btn btn-primary">Click me!</button>
+    <!-- minu tailwind nupp -->
+    <button class="rounded-lg leading-[21px] hover: bg-[#ff79c6] text-black px-4 font-semibold text-sm h-[40px]">Replica Button</button>
+
+
+    <button class="btn btn-primary">Original Button</button>
 @endsection
