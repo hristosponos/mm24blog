@@ -16,10 +16,10 @@
         <form method="POST" action="{{ route('verification.send') }}">
             @csrf
 
-            <div>
-                <x-primary-button>
+            <div class="flex items-center justify-end mt-4">
+                <button class="btn btn-primary">
                     {{ __('Resend Verification Email') }}
-                </x-primary-button>
+                </button>
             </div>
         </form>
 
