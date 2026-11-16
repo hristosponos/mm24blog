@@ -1,3 +1,15 @@
+@extends('partials.layout')
+@section('content')
+<div class="container mx-auto">
+    <div class="mb-4 text-sm text-gray-600">
+        {{ __('This is a secure area of the application. Please confirm your password before continuing.') }}
+    </div>
+
+    <form method="POST" action="{{ route('password.confirm') }}" class="card bg-base-300 shadow-sm w-2/3 mx-auto p-3">
+        @csrf
+        
+    </form>
+</div>
 <x-guest-layout>
     <div class="mb-4 text-sm text-gray-600">
         {{ __('This is a secure area of the application. Please confirm your password before continuing.') }}
@@ -25,3 +37,4 @@
         </div>
     </form>
 </x-guest-layout>
+@endsection
